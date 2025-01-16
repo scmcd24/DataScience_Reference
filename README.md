@@ -110,4 +110,6 @@ A collection of tools, visualizations, snippets, and thoughts for implementing a
     - Monte cristo problem
     - Kolmogorov-Smirnoff test
     - Wilcoxon
-    - 
+    - Cronbach's alpha
+    - ROC curves
+    - precision /recall curves
