@@ -24,6 +24,7 @@ def autohist(df, col_name, save_dir):
 
 def auto_qq(df, col_name, save_dir):
     import statsmodels.api as sm
+    import matplotlib.pyplot as plt
 
     sm.qqplot(df[col_name])
 
@@ -31,4 +32,13 @@ def auto_qq(df, col_name, save_dir):
     plt.savefig(f'{save_dir}/{col_name}_qq.png', bbox_inches='tight')
     plt.close()
 
-
+def auto_box_whisker(df, colname):
+    import matplotlib.pyplot as plt
+    
+    fig = plt.figure(figsize =(4, 3))
+    ax = fig.add_subplot()
+    ax.boxplot(df[colname])
+    ax.set_ylabel('value')
+    ax.set_xlabel(colname)
+    ax.set_title(f'Box Plot for {colname}')
+    plt.show()
