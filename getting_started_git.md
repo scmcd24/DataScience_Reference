@@ -44,3 +44,7 @@
 
  - Using git in the terminal
     - vim is the default git text editor: :q to quit, etc
+
+ - References
+    - [https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
+    - [Authenticating git](https://dev.to/shafia/support-for-password-authentication-was-removed-please-use-a-personal-access-token-instead-4nbk)

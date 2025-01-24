@@ -3,113 +3,133 @@
 A collection of tools, visualizations, snippets, and thoughts for implementing and explaining data science concepts. 
 
 ### Sections:
- - Introductory Statistics
-    - Quantiles / Percent Rank calculation
-    - Measures of Central Tendency
-        - Mean (arithmetic, geometric, harmonic)
-        - Median
-        - Mode
-    - Measures of Dispersion:
-        - Range
-        - IQR
-        - Variance
-        - Standard Deviation
-    - Skew
-    - Kurtosis
-    - Z scores & Confidence Intervals
-    - T tests
-    - Effect sizes
-        - Cohen's data
-        - Cramer's V
-    - Tests of Normality
-    - Non-Parametric Tests 
-        - Chi-Square Test
-    - Heteroskedasticity
- - Linear Algebra & Calculus
-    - Matrix 101: determinant, rank, etc.
-    - Eigenvectors & Eigenvalues
-    - Hessian matrix 
- - Programming
-    - Python
-    - R
-    - Java
-    - Linux / Bash
-    - Slurm
- - Software & Tools
-    - Conda / Anaconda
-    - Virtual Environments
-    - Docker / Singularity
-    - Git/github
- - EDA, Data Cleaning, & Feature Engineering  
-    - Scaling: log, sqrt, minmax
-    - one-hot encoding
- - Classic Statistical Tools (maybe combine with Intro)
-    - Correlation: Pearson, Spearman, Kendall's tau, distance
-    - Confusion matrix
-    - Power, Type 1 error, type 2 error, alpha
-    - Metrics:
-        - MSE, MAE, R2, Adjusted R2, Pseudo R2, AUC, BIC
-    - Distributions & Thier attributes:
-        - Gamma
-        - Cauchy
-        - Normal, Standard Normal
-        - Uniform
-        - Binomial 
-        - Poisson
-    - QQ plot
- - Advanced Statistics (??)
-    - Linear Mixed Modeling
-    - Mediation vs Moderation; Interactions, Effects
-    - Tukey's Hinges, Ladder of Power
-    - Family-Wise Error & Bonferroni correction
- - Data Mining
-    - Clustering Methods
-        - Spectral
-        - DBSCAN
-        - Hierarchical Clustering
-        - Kmeans / Kmed (???)
-        - Elbow curve vs Silhoutte score
-    - Regression
-        - Linear
-        - Logisitic
-        - Gamma
-        - Poisson
-        - Quantile
-    - Decision Trees / Ensemble Methods
-        - Random Forest
-        - AdaBoost / XGBoost
-        - Bagging / Boosting / Bootstrapping
-        - Gridsearch vs random search
-    - Support Vector Machine
- - Machine Learning
-    - Maximum Likelihood Estimation
-    - Taylor Series/ Newton-Raphson
-    - Survival Analysis
-    - ICA / PCA
- - Time Series
-    - White noise / random walk, etc. 
-    - Stationarity
-    - ADF vs PACF
-    - ARIMA Suite
-    - Test of Causality (Granger, etc.)
- - MLOps
- - Bayesian Statistics
- - Deep Learning
-    - Activation functions
-    - Loss functions
-    - Glorot Uniform Initializer
-    - Mixture of Experts
- - NLP
-    - Similarity Metrics: Jaccard, cosine, Manhattan, etc. 
- - Computer Vision
- - Practice Sets
+- Introductory Statistics
+   - Quantiles / Percent Rank calculation
+   - Measures of Central Tendency
+      - Mean (arithmetic, geometric, harmonic)
+      - Median
+      - Mode
+   - Measures of Dispersion:
+      - Range
+      - IQR
+      - Variance
+      - Standard Deviation
+   - Skew
+   - Kurtosis
+   - Z scores & Confidence Intervals
+   - T tests
+   - Effect sizes
+      - Cohen's data
+      - Cramer's V
+   - Tests of Normality
+   - Non-Parametric Tests 
+      - Chi-Square Test
+   - Heteroskedasticity
+- Probability
+   - Basics
+   - Unions, intersections, conditional probability
+   - PDF, CDF
+   - Marginal / joint / conditional distributions
+- Linear Algebra & Calculus
+   - Matrix 101: determinant, rank, etc.
+   - Eigenvectors & Eigenvalues
+   - Hessian matrix 
+- Programming
+   - Python
+   - R
+   - Java
+   - Linux / Bash
+   - Slurm
+- Software & Tools
+   - Conda / Anaconda
+   - Virtual Environments
+   - Docker / Singularity
+   - Git/github
+- EDA, Data Cleaning, & Feature Engineering  
+   - Scaling: log, sqrt, minmax
+   - one-hot encoding
+- Classic Statistical Tools (maybe combine with Intro)
+   - Correlation: Pearson, Spearman, Kendall's tau, distance
+   - Confusion matrix
+   - Power, Type 1 error, type 2 error, alpha
+   - Metrics:
+      - MSE, MAE, R2, Adjusted R2, Pseudo R2, AUC, BIC
+   - Distributions & Thier attributes:
+      - Gamma
+      - Cauchy
+      - Normal, Standard Normal
+      - Uniform
+      - Binomial 
+      - Poisson
+      - Bernoulli
+   - QQ plot
+- Advanced Statistics (??)
+   - Linear Mixed Modeling
+   - Mediation vs Moderation; Interactions, Effects
+   - Tukey's Hinges, Ladder of Power
+   - Family-Wise Error & Bonferroni correction
+- Data Mining
+   - Clustering Methods
+      - Spectral
+      - DBSCAN
+      - Hierarchical Clustering
+      - Kmeans / Kmedoid
+      - Elbow curve vs Silhoutte score
+   - Regression
+      - Linear
+      - Logisitic
+      - Gamma
+      - Poisson
+      - Quantile
+   - Decision Trees / Ensemble Methods
+      - Random Forest
+      - AdaBoost / XGBoost
+      - Bagging / Boosting / Bootstrapping
+      - Gridsearch vs random search
+      - Entropy, Gini index
+   - Support Vector Machine
+- Machine Learning
+   - Maximum Likelihood Estimation
+   - Taylor Series/ Newton-Raphson
+   - Expectation Maximization (EM)
+      - Find maximum likelihood solutions for models with latent variables
+   - Log-Likelihood
+   - Survival Analysis
+   - ICA / PCA / t-SNE / UMAP
+- Time Series
+   - White noise / random walk, etc. 
+   - Stationarity
+   - ADF vs PACF
+   - ARIMA Suite
+   - Test of Causality (Granger, etc.)
+- MLOps
+- Bayesian Statistics
+- Deep Learning
+   - Activation functions
+   - Loss functions
+   - Glorot Uniform Initializer
+   - Mixture of Experts
+   - Attention
+- NLP
+   - Similarity Metrics: Jaccard, cosine, Manhattan, etc. 
+   - Kullback-Leibler divergence
+- Computer Vision
+- Practice Sets
 
- - Other (dump):
-    - SHAPP values
-    - Monte Carlo // Markov chain
-    - Monte cristo problem
-    - Kolmogorov-Smirnoff test
-    - Wilcoxon
-    - Cronbach's alpha
-    - ROC curves
-    - precision /recall curves
+- Other (dump):
+   - SHAPP values
+   - Monte Carlo // Markov chain
+   - Monte cristo problem
+   - Kolmogorov-Smirnoff test
+   - Wilcoxon
+   - Cronbach's alpha
+   - ROC curves
+   - precision /recall curves
+
+- Mixture Models:
+   - Bernoulli Mixture Model: 
+      - Applications: [demixing data samples from mixture models, "model-based clustering"](https://doi.org/10.3150/19-BEJ1173)
+      - Takes discrete binary variables 
+   - Uninformative prior:
+      - e.g., Dirichlet
+      - Parameters are set such that all outcomes are equally likely
