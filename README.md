@@ -125,6 +125,9 @@ A collection of tools, visualizations, snippets, and thoughts for implementing a
    - Cronbach's alpha
    - ROC curves
    - precision /recall curves
+   - opencv
+   - internal covariance shift
+   
 
 - Mixture Models:
    - Bernoulli Mixture Model: 
