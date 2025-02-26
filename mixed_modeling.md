@@ -9,6 +9,7 @@
 
 - In linear regression, we could fix our data with the equation y = B0 + B1x1 + B2x2 ... + Bnxn
 - Linear regression assumes that the beta weights given to each variable are fixed 
+- Random intercepts
 
 #### References:
 - http://mfviz.com/hierarchical-models/
