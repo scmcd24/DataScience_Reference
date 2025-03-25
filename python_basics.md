@@ -10,3 +10,32 @@ intersection, union, etc?
 # Speed:
 - Series, tuple, set < list < dataframe
 
+# Matrices & Arrays:
+- Can only contain one data type
+- Faster than dataframes
+
+# Tibble (R tidyverse)
+- "Opinionated, lazy" data frames
+- Does not change variable names / types
+- Does not display entire object, just first 10 rows / data types
+
+- https://r4ds.had.co.nz/tibbles.html
+
+Python          |             Python              |         Pandas     |    Numpy       |                             | 
+----------------------------------------------------------------------------------------------------------------------- 
+R               |             |   R  |                     |                        R                     | Tidyverse |
+-----------------------------------------------------------------------------------------------------------------------  
+Feature         | Set | Tuple | List | Dictionary | Series | Dataframe | Array | Matrix | Vector | Factor | Tibble    |
+-----------------------------------------------------------------------------------------------------------------------
+Mutable         |
+Speed           |
+Ordered         |
+Indexing        |
+Duplicates      |
+Constructor     |
+Data Types      |
+
+Python: set, list, tuple, dictionary, 
+Numpy/pandas: array, dataframe, series
+R: vector, matrix, list, array, dataframe
+tidyverse: tibble, factors
