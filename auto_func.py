@@ -1,7 +1,10 @@
+#!/usr/bin/python3
+
+import matplotlib.pyplot as plt
+import numpy as np
+import seaborn as sns
 
 def autohist(df, col_name, save_dir):
-    import matplotlib.pyplot as plt
-    import numpy as np
     
     if df[col_name].dtype != 'object':
         num_data = len(df[col_name])
@@ -21,6 +24,15 @@ def autohist(df, col_name, save_dir):
     #plt.show()
     plt.savefig(f'{save_dir}/{col_name}_hist.png', bbox_inches='tight')
     plt.close()
+
+def auto_bar(df, x_var, y_var, save_dir):
+    ax = sns.countplot(data=df, x=x_var, hue=y_var)
+    plt.axhline(0, color='black', linewidth=1)  
+    plt.title(f'{x_var.capitalize()} by {y_var.capitalize()}', fontsize=14)
+    ax.set_xlabel(x_var.capitalize(), fontsize=12, labelpad=20)
+    ax.set_ylabel('Count', fontsize=12, labelpad=10)
+    plt.savefig(f'{save_dir}/{x_var}_{y_var}_barplot.png', bbox_inches='tight')
+    plt.clf()
 
 def auto_qq(df, col_name, save_dir):
     import statsmodels.api as sm
