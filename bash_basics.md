@@ -157,6 +157,9 @@
  - keybinds (Ctrl+C, Ctrl+A, Ctrl+E, Ctrl+U, Cmd+Opt+C, Esc+B, Esc+Del, 
    Opt+Click)
  - ~/.bashrc
+ - rename terminal window: echo -ne "\033]0;NEW_NAME\007"
+ - blink: echo -e "\e[5mThis text will blink\e[0m"
+ - aliases / functions
 
 #### References
  - https://linuxize.com/post/bash-heredoc/
