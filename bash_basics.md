@@ -35,6 +35,7 @@
     - Access first item in list: ```echo ${my_list}```
     - Access list item by index: ```echo ${my_list[1]}``` (0-based indexing)
     - Expand entire list: ```echo ${my_list[@]}```
+    - ```${@}```: A list of whatever was passed, use like kwargs/args in python
  - Command expansion:
     - Like parameters, commands can be executed and assigned to variables using
       parentheses:
@@ -84,9 +85,12 @@
            (executes as one line)
  - ```|``` (pipe): passes content of one command to other
  - ```&&``` AND, ```||``` OR: and/or commands
+ - ```#```: Comments
 
 #### Special commmands, advanced:
  - echo: prints to terminal ```echo $my_name```
+   - ```echo "" > file.txt``` '>>' write to file, overwrite
+   - ```echo "" >> file.txt``` '>>' write to file, append
  - ls: lists items in directory ```ls -l $directory```
  - cat: reads files/text: ```cat file.txt```
  - wc: Calculate length of words.text
@@ -121,8 +125,6 @@
     - Show items using the most space: ```du -ah | sort -rh | head -n 20```
  - Remove whitespace from file: ```sed -i 's/[[:space:]]*$//' $csv_file```
  - ```dirname $directory```, ```basename $directory```: parent/child of path
- - realpath
- - head/tail
 
 #### Loops
  - While loop:
@@ -145,6 +147,16 @@
     - Absolutely need spaces between criteria ('! -f...') and []
     - In this form, absolutely need double quotes to expand 
     - Common if flags: ```-f, ! -d, -z, -n```
+
+#### To add:
+ - in-terminal text editors: vim, nano && keybinds (Ctrl+C, etc.)
+ - realpath
+ - head/tail
+ - tree: needs to be installed?
+ - chmod / chown
+ - keybinds (Ctrl+C, Ctrl+A, Ctrl+E, Ctrl+U, Cmd+Opt+C, Esc+B, Esc+Del, 
+   Opt+Click)
+ - ~/.bashrc
 
 #### References
  - https://linuxize.com/post/bash-heredoc/
