@@ -66,6 +66,7 @@
     - Sign test: paired alternative to median test?
     - Chi-square distribution /table
     - Cronbach's alpha
+    - Cramer's V
 
 Citations:
  - https://www.uv.es/visualstats/vista-frames/help/lecturenotes/lecture09/lec9part4.html
