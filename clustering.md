@@ -2,11 +2,11 @@
 # Clustering
 
  - Partition-based methods:
-    - kmeans
+    - kmeans: unsupervised
     - kmedoid
  - Density-based:
     - DBSCAN, DBClue
- - Hierarchical
+ - Hierarchical (unsupervised)
     - Agglomerative vs Divisive
     - Dendrogram
 

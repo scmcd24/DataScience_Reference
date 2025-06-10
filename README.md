@@ -111,10 +111,15 @@ A collection of tools, visualizations, snippets, and thoughts for implementing a
    - Mixture of Experts
    - Attention
 - NLP
-   - Similarity Metrics: Jaccard, cosine, Manhattan, etc. 
+   - Similarity Metrics: Jaccard, cosine, Manhattan, Euclidean, Hamming, 
+     Minkowski, etc. 
    - Kullback-Leibler divergence
 - Computer Vision
 - Practice Sets
+- Data Visualization
+   - Voronoi diagrams
+   - QQ Plots
+   - 
 
 - Other (dump):
    - SHAPP values
