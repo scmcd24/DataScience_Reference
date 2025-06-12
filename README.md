@@ -32,8 +32,10 @@ A collection of tools, visualizations, snippets, and thoughts for implementing a
    - Marginal / joint / conditional distributions
 - Linear Algebra & Calculus
    - Matrix 101: determinant, rank, etc.
-   - Eigenvectors & Eigenvalues
-   - Hessian matrix 
+   - Eigenvectors & Eigenvalues (Eigendecomp)
+   - Hessian, Jacobian, Laplacian matrix 
+   - Properties of matrices (rank, determinant, etc)
+   - 
 - Programming
    - Python
    - R
@@ -62,6 +64,7 @@ A collection of tools, visualizations, snippets, and thoughts for implementing a
       - Binomial 
       - Poisson
       - Bernoulli
+      - Kernel density estimation
    - QQ plot
 - Advanced Statistics (??)
    - Linear Mixed Modeling
@@ -75,6 +78,7 @@ A collection of tools, visualizations, snippets, and thoughts for implementing a
       - Hierarchical Clustering
       - Kmeans / Kmedoid
       - Elbow curve vs Silhoutte score
+      - Affinity propogation
    - Regression
       - Linear
       - Logisitic
@@ -87,7 +91,9 @@ A collection of tools, visualizations, snippets, and thoughts for implementing a
       - Bagging / Boosting / Bootstrapping
       - Gridsearch vs random search
       - Entropy, Gini index
+      - CART
    - Support Vector Machine
+   - k Nearest Neighbors
 - Machine Learning
    - Maximum Likelihood Estimation
    - Taylor Series/ Newton-Raphson
@@ -96,6 +102,7 @@ A collection of tools, visualizations, snippets, and thoughts for implementing a
    - Log-Likelihood
    - Survival Analysis
    - ICA / PCA / t-SNE / UMAP
+   - Non-negative matrix factorization
 - Time Series
    - White noise / random walk, etc. 
    - Stationarity
@@ -110,11 +117,22 @@ A collection of tools, visualizations, snippets, and thoughts for implementing a
    - Glorot Uniform Initializer
    - Mixture of Experts
    - Attention
+   - Architectures (CNN, RNN, UNet, Transformer, diffusion, autoencoder, adversarial)
+   - feed forward
+   - backpropogation
+   - optimizers (Adam, etc.)
 - NLP
    - Similarity Metrics: Jaccard, cosine, Manhattan, Euclidean, Hamming, 
      Minkowski, etc. 
    - Kullback-Leibler divergence
+   - Latent Dirichlet allocation
+   - Sentiment analysis
+   - Named Entity Recognition (NER)
+   -
 - Computer Vision
+   - Image preprocessing
+   - Image registration
+   - segmentation
 - Practice Sets
 - Data Visualization
    - Voronoi diagrams
@@ -132,7 +150,9 @@ A collection of tools, visualizations, snippets, and thoughts for implementing a
    - precision /recall curves
    - opencv
    - internal covariance shift
-   
+   - causality analysis
+
+  
 
 - Mixture Models:
    - Bernoulli Mixture Model: 
