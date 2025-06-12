@@ -44,6 +44,9 @@
     - ex: kernel regression, time series (periodogram?), Naive Bayes, visualize
       data more smoothly than histogram
 
+#### See also:
+ - Mean-shift clustering
+
 #### References:
  - https://mathisonian.github.io/kde/
  - https://en.wikipedia.org/wiki/Kernel_density_estimation
