@@ -9,6 +9,10 @@ def cap_colnames(col_name):
     return col_name
 
 def autohist(df, col_name, save_dir):
+    import matplotlib.pyplot as plt
+    import numpy as np
+
+    df[col_name].replace([np.inf, -np.inf], np.nan, inplace=True)
     
     if df[col_name].dtype != 'object':
         num_data = len(df[col_name])
@@ -60,30 +64,44 @@ def auto_box_whisker(df, colname):
     plt.show()
 
 
+def auto_jointgrid(df, x_col, y_col, save_dir):
+    from seaborn import JointGrid
 
-# updated with capitalzie thing, have to reconcile
-def do_boxplot(df, x_col, y_col, save_dir):
-    fig, ax = plt.subplots(figsize=(11.7, 8.27))
-    sns.boxplot(data=df, x=x_col, y=y_col, ax=ax)
+    fig = JointGrid(data=df, x=x_col, y=y_col)
+    fig.plot_joint(sns.scatterplot, s=100, alpha=.5)
+    fig.plot_marginals(sns.histplot, kde=True)
+    plt.title(f"{x_col} vs {y_col}")
+    plt.ylabel(y_col)
+    plt.xlabel(x_col)
+    plt.savefig(f'{save_dir}/{x_col}_{y_col}_jointgrid.png', bbox_inches='tight')
+    # plt.show()
+    plt.close()
 
-    x_col_formt=x_col.capitalize()
-    y_col_list = [word[0].upper() + word[1:] for word in y_col.split()]
-    y_col_formt = " ".join(y_col_list)
-    ax.set_title(f'{y_col_formt} by {x_col_formt}')
-    ax.set_xlabel(x_col_formt)
-    ax.set_ylabel(y_col_formt)
-    plt.savefig(f'{save_dir}/{x_col}_{y_col}_hist.png', bbox_inches='tight')
-    plt.show()
 
-def do_hist(df, x_col, y_col, save_dir):
-    ax = sns.histplot(data=df, x=y_col, hue=x_col, multiple='stack')
 
-    x_col_formt=x_col.capitalize()
-    y_col_list = [word[0].upper() + word[1:] for word in y_col.split()]
-    y_col_formt = " ".join(y_col_list)
-    ax.set_title(f'{y_col_formt} by {x_col_formt}')
-    ax.set_xlabel(x_col_formt)
-    plt.ylabel('Frequency')
-    sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
-    plt.savefig(f'{save_dir}/{x_col}_{y_col}_hist.png', bbox_inches='tight')
-    plt.show()
+# # updated with capitalzie thing, have to reconcile
+# def do_boxplot(df, x_col, y_col, save_dir):
+#     fig, ax = plt.subplots(figsize=(11.7, 8.27))
+#     sns.boxplot(data=df, x=x_col, y=y_col, ax=ax)
+
+#     x_col_formt=x_col.capitalize()
+#     y_col_list = [word[0].upper() + word[1:] for word in y_col.split()]
+#     y_col_formt = " ".join(y_col_list)
+#     ax.set_title(f'{y_col_formt} by {x_col_formt}')
+#     ax.set_xlabel(x_col_formt)
+#     ax.set_ylabel(y_col_formt)
+#     plt.savefig(f'{save_dir}/{x_col}_{y_col}_hist.png', bbox_inches='tight')
+#     plt.show()
+
+# def do_hist(df, x_col, y_col, save_dir):
+#     ax = sns.histplot(data=df, x=y_col, hue=x_col, multiple='stack')
+
+#     x_col_formt=x_col.capitalize()
+#     y_col_list = [word[0].upper() + word[1:] for word in y_col.split()]
+#     y_col_formt = " ".join(y_col_list)
+#     ax.set_title(f'{y_col_formt} by {x_col_formt}')
+#     ax.set_xlabel(x_col_formt)
+#     plt.ylabel('Frequency')
+#     sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
+#     plt.savefig(f'{save_dir}/{x_col}_{y_col}_hist.png', bbox_inches='tight')
+#     plt.show()
